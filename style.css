@@ -1,0 +1,45 @@
+.flexContainer{
+    display:flex;
+    
+}
+
+#firstBox{
+    width: 33%;
+    height: 100px;
+    margin: 4px;
+    padding: 8px;
+    background-color: rgb(199, 199, 212);
+}
+
+#secondBox{
+    width: 33%;
+    margin: 4px;
+    padding: 8px;
+    background-color: rgb(199, 199, 212);
+}
+
+#thirdBox{
+    width: 33%;
+    margin: 4px;
+    padding: 8px;
+    background-color: rgb(199, 199, 212);
+}
+
+.workGrid{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-areas:
+    "firstButton firstButton"
+    "secondButton secondButton"
+    ;
+
+}
+
+@media only screen and (max-width: 600){
+    .workGrid{
+        display: grid;
+        grid-template-columns: 100px 100px 100px 100px;
+        grid-template-areas:
+        "firstButton"
+        "secondButton"
+}}
